@@ -1,0 +1,60 @@
+body {
+    background-color: #AEB784;
+    font-family: Impact, fantasy;
+}
+nav {
+  background-color: #41431B;
+  position: fixed;
+  overflow: hidden;
+  left: 50%;
+  top: 8%;
+  transform: translate(-50%, -50%);
+  outline-style: solid;
+  outline-width: 4px;
+  outline-color: #e3dbbb;
+}
+
+/* Style the links inside the navigation bar */
+nav a {
+  float: left;
+  color: #e3dbbb;
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+/* Change the color of links on hover */
+nav a:hover {
+  background-color: #E3DBBB;
+  color: #41431b;
+}
+
+/* Add a color to the active/current link */
+nav a.active {
+  background-color: #E3DBBB;
+  color: #41431b;
+}
+h1 {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    color: #E3DBBB;
+    font-size: 180px; 
+    text-shadow: #41431b 20px 0px 0;
+}
+
+div {
+    font-size: 30px;
+    color: #41431b;
+    background-color: #e3dbbb;
+    padding: 70px;
+    margin-left: 17%;
+    margin-right: 17%;
+    margin-bottom: 20%;
+    outline-style: solid;
+    outline-width: 4px;
+    outline-color: #41431b;
+}
+
