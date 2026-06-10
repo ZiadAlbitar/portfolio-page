@@ -1,8 +1,9 @@
 body {
     background-color: #AEB784;
-    font-family: Impact, fantasy;
+    font-family: JetBrains Mono, fantasy;
 }
 nav {
+  font-family: Impact, fantasy;
   background-color: #41431B;
   position: fixed;
   overflow: hidden;
@@ -35,26 +36,138 @@ nav a.active {
   background-color: #E3DBBB;
   color: #41431b;
 }
+
+/* .title { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     height: fit-content; */
+/*     width: fit-content; */
+/*     margin-left: auto; */
+/*     margin-right: auto; */
+/* } */
+
 h1 {
+    font-family: Impact;
     display: flex;
-    margin-top: 10%;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     color: #E3DBBB;
-    font-size: 180px; 
+    font-size: 13vw; 
     text-shadow: #41431b 20px 0px 0;
+    padding: 0;
+    margin: 13% auto 2%;
+    width: 61vw;
+    background-color: blue;
 }
 
-div {
-    font-size: 30px;
+h2 {
+    font-family: Impact;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    color: #E3DBBB;
+    font-size: 8vw; 
+    text-shadow: #41431b 20px 0px 0;
+    padding: 0;
+    margin: 5% auto 2%;
+    width: 31vw;
+    background-color: blue;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width : 30px;
+    height: 30px;
+    margin: 2% 5%;
+}
+
+.box {
+    display: flex;
+    font-size: 25px;
     color: #41431b;
+    width: 45vw;
+    margin: 2% auto;
+    padding: 3% 3%;
     background-color: #e3dbbb;
-    padding: 70px;
-    margin-left: 17%;
-    margin-right: 17%;
-    margin-bottom: 20%;
     outline-style: solid;
     outline-width: 4px;
     outline-color: #41431b;
 }
 
+/* FONTS */
+font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold-Italic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Bold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold-Italic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-ExtraBold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium-Italic.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium-Italic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Medium.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/gh/JetBrains/JetBrainsMono/web/woff/JetBrainsMono-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
